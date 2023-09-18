@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    font-family: 'Exo', sans-serif;
+    font-size: 2rem;
+    margin: 2rem 2%;
+    color: #b4c7c0;
+    background: linear-gradient(rgb(2, 18, 9),rgb(2, 18, 9, 0.8), rgba(2, 18, 9, 0.2),rgb(2, 18, 9, 0.8), rgba(2, 18, 9, 1)), 
+    url("../images/background3.jpg") no-repeat center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+nav a {
+    color: whitesmoke;
+    font-size: 2.5rem;
+    padding: 1rem 4rem 1rem 4rem;
+    text-decoration: none;
+}
+nav a:visited {
+    color: whitesmoke;
+}
+nav a:hover {
+    color: darkcyan; 
+}
+nav a:focus {
+    color:whitesmoke;
+}
+nav a:active {
+    color: darkcyan; 
+}
+h1,h2{
+    font-size: 2.5rem;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+#main_logo{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 5vw;
+    min-height: 10vw;
+}
+#main_logo:hover{
+    content: url("../images/logo_green.png");
+}
+nav ul{
+    list-style: none;
+    text-align: center;
+}
+nav li{
+    margin: 0;
+    display: inline-block;
+    border-right: 2px solid  rgb(245, 245, 245,0.3);
+}
+nav li:last-child{
+    border: none;
+}
+section{
+    display: flex;
+}
+article{
+    background-color: rgba(1, 6, 3, 0.8);
+    border-radius: 100px 10px;
+    padding: 3rem 3rem 3rem 3rem;
+    margin: 2rem 2rem 2rem 2rem;
+    flex:1;
+    overflow:auto
+}
+article:hover{
+    box-shadow: 0px 0px 10px 5px rgba(0,139,139,0.55);
+}
+hr{
+    border: 1px solid  rgb(245, 245, 245,0.3);
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 2rem auto 2rem auto;
+}
+footer div{
+    text-align: center;
+    flex:1;
+}
+#mini_logo{
+    width: 3vw;
+}
+
+/*animations*/
+
+.container{
+    animation: 2s fadeIn;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    margin-bottom: 2rem;
+}
+nav.container{
+    animation-delay: 0.7s;
+}
+main.container{
+    animation-delay: 1.4s;
+    max-width: 2440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer.container{
+    display: flex;
+    animation-delay: 1.4s;
+}
+p,h2,h1{
+    animation: 2.1s fadeIn;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    animation-delay: 2s;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+/*Banners styling*/
+#banner{
+    background: 
+    url("../images/banner1.jpg") no-repeat center;
+    height: 16rem;
+    background-size: cover;
+}
+.offer_img{
+    border-radius: 10px;
+    width:auto;
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
